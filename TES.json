@@ -1,0 +1,44 @@
+{"success":true
+"message":""
+"data":{"reference":"DEV-T1115191111RL8VE"
+"merchant_ref":"INV202305120001"
+"payment_selection_type":"static"
+"payment_method":"QRISC"
+"payment_name":"QRIS (Customizable)"
+"customer_name":"adminadmin"
+"customer_email":"admin@admin.com"
+"customer_phone":"08000000000"
+"callback_url":"http:\/\/backup.juraganakun.com\/tripay\/callback"
+"return_url":null
+"amount":120000
+"fee_merchant":1640
+"fee_customer":0
+"total_fee":1640
+"amount_received":118360
+"pay_code":null
+"pay_url":null
+"checkout_url":"https:\/\/tripay.co.id\/checkout\/DEV-T1115191111RL8VE"
+"status":"UNPAID"
+"expired_time":1683979101
+"order_items":[{"sku":"0101"
+"name":"Facebook Ads + KTP\/SIM (Random BM)"
+"price":120000
+"quantity":1
+"subtotal":120000
+"product_url":null
+"image_url":null}]
+"instructions":[{"title":"Pembayaran via QRIS"
+"steps":["Masuk ke aplikasi dompet digital Anda yang telah mendukung QRIS"
+"Pindai\/Scan QR Code yang tersedia"
+"Akan muncul detail transaksi. Pastikan data transaksi sudah sesuai"
+"Selesaikan proses pembayaran Anda"
+"Transaksi selesai. Simpan bukti pembayaran Anda"]}
+{"title":"Pembayaran via QRIS (Mobile)"
+"steps":["Download QR Code pada invoice"
+"Masuk ke aplikasi dompet digital Anda yang telah mendukung QRIS"
+"Upload QR Code yang telah di download tadi"
+"Akan muncul detail transaksi. Pastikan data transaksi sudah sesuai"
+"Selesaikan proses pembayaran Anda"
+"Transaksi selesai. Simpan bukti pembayaran Anda"]}]
+"qr_string":"SANDBOX MODE"
+"qr_url":"https:\/\/tripay.co.id\/qr\/DEV-T1115191111RL8VE"}}
