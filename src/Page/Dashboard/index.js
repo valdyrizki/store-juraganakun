@@ -1,5 +1,11 @@
+import Header from '../../Components/Header';
 import ListProducts from '../../Components/ListProducts';
 
 export default function Dashboard() {
-  return <ListProducts />;
+    return (
+        <>
+            <Header />
+            <ListProducts />
+        </>
+    );
 }
