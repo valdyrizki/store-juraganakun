@@ -6,6 +6,7 @@ import BankReducer from './bank';
 import TransactionReducer from './transaction';
 import DownloadReducer from './download';
 import UserReducer from './user';
+import CategoryReducer from './category';
 
 export default combineReducers({
     ProductReducer,
@@ -15,4 +16,5 @@ export default combineReducers({
     TransactionReducer,
     DownloadReducer,
     UserReducer,
+    CategoryReducer,
 });

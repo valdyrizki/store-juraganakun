@@ -24,8 +24,9 @@ export default function WAFloating() {
                 href='https://api.whatsapp.com/send?phone=6283818213645&text=Halo%21%20Saya%20butuh%20bantuan.'
                 style={floatingStyle}
                 target='_blank'
+                rel='noreferrer'
             >
-                <i class='fa fa-whatsapp' style={{ marginTop: '16px' }}></i>
+                <i className='fa fa-whatsapp' style={{ marginTop: '16px' }}></i>
             </a>
         </>
     );
