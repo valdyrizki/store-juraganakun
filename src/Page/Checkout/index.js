@@ -72,11 +72,11 @@ export default function Checkout() {
         if (getPostTransactionResult) {
             showSuccess(getPostTransactionResult.msg);
             //Set data to local storage
-            window.open(
-                getPostTransactionResult.redirect,
-                '_blank',
-                'noreferrer'
-            );
+            // window.open(
+            //     getPostTransactionResult.redirect,
+            //     '_blank',
+            //     'noreferrer'
+            // );
             dispatch(removeAllCart());
             dispatch(clearTransaction());
             navigate('/transaction');
