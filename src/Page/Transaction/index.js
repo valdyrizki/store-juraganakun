@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Bars4Icon } from '@heroicons/react/20/solid';
+import { Bars4Icon, CreditCardIcon } from '@heroicons/react/20/solid';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMyTransaction } from '../../actions/transactionAction';
 import { showError } from '../../Components/Message';
-import transaction from '../../reducers/transaction';
 import { decimalFormatter, getUserLogin } from '../../Helpers';
 import { useNavigate } from 'react-router-dom';
 import TransactionDetail from '../../Components/TransactionDetail';
@@ -51,7 +50,7 @@ export default function Transaction() {
             </div>
 
             <div className='overflow-hidden rounded-lg border border-gray-200 shadow-md m-5'>
-                <table className='table-auto w-full border-collapse bg-white text-left text-sm text-gray-500'>
+                <table className='table-fixed w-full border-collapse bg-white text-left text-sm text-gray-500'>
                     <thead className='bg-gray-50'>
                         <tr>
                             <th
@@ -102,6 +101,7 @@ export default function Transaction() {
                                         <td className='px-6 py-4'>
                                             <StatusTrx
                                                 transaction={transaction}
+                                                className={'text-center'}
                                             />
                                         </td>
 
@@ -123,6 +123,29 @@ export default function Transaction() {
                                                     />
                                                     Detail
                                                 </button>
+
+                                                {transaction.status == 0 ? (
+                                                    <button
+                                                        onClick={() =>
+                                                            window.open(
+                                                                'http://tripay.co.id/checkout/' +
+                                                                    transaction.invoice_merchant,
+                                                                '_blank',
+                                                                'noreferrer'
+                                                            )
+                                                        }
+                                                        type='button'
+                                                        className='inline-flex items-center rounded-md bg-green-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 lg:ml-2 sm:mt-2 xs:mt-2'
+                                                    >
+                                                        <CreditCardIcon
+                                                            className='-ml-0.5 mr-1.5 h-5 w-5'
+                                                            aria-hidden='true'
+                                                        />
+                                                        Bayar
+                                                    </button>
+                                                ) : (
+                                                    <></>
+                                                )}
                                             </span>
                                         </td>
                                     </tr>

@@ -117,9 +117,9 @@ export default function ProductDetail({ visible, onClose, product }) {
                                                             of 5 stars
                                                         </p>
                                                         <i className='ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500'>
-                                                            {product.reviewCount !=
+                                                            {product.sold !=
                                                             null
-                                                                ? product.reviewCount
+                                                                ? product.sold
                                                                 : 0}{' '}
                                                             reviews
                                                         </i>

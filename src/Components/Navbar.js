@@ -235,8 +235,8 @@ export default function Navbar() {
                         </div>
                         <Disclosure.Panel className='sm:hidden'>
                             <div className='space-y-1 px-2 pb-3 pt-2'>
-                                {navigation.map((item) => (
-                                    <NavLink to={item.to}>
+                                {navigation.map((item, i) => (
+                                    <NavLink to={item.to} key={i}>
                                         <Disclosure.Button
                                             key={item.name}
                                             as='a'
